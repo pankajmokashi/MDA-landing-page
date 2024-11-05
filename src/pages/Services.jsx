@@ -119,7 +119,12 @@ function Services() {
         <div className="w-full px-8">
           <div className="mx-auto max-w-screen-xl py-12 flex flex-col md:flex-row-reverse items-center justify-between">
             <div className="w-full mb-4 xm:mb-8 md:mb-0 md:w-1/2 md:pl-12">
-              <img className="mx-auto" src="/h-img1.png" alt="img-1" />
+              <img
+                loading="lazy"
+                className="mx-auto"
+                src="/h-img1.png"
+                alt="img-1"
+              />
             </div>
             <div className="w-full sm:text-center md:text-left md:w-1/2 md:pr-4">
               <div className="text-3xl xm:text-5xl font-bold text-[#282828] mb-2 xm:mb-4">
@@ -179,7 +184,12 @@ function Services() {
       </FadeInSection>
       <FadeInSection>
         <div className="relative">
-          <img className="w-full" src="/f-img1.png" alt="footer-img" />
+          <img
+            loading="lazy"
+            className="w-full"
+            src="/f-img1.png"
+            alt="footer-img"
+          />
           <div className="w-full h-full px-16 absolute top-0 text-white">
             <div className="h-full flex flex-col items-center justify-center gap-4 sm:gap-8">
               <p className="text-center text-xl xm:text-3xl sm:text-5xl md:text-7xl">
