@@ -98,6 +98,7 @@ function Header() {
                 <li key={item.name} className="w-full p-2 flex justify-center">
                   <Link
                     to={item.link}
+                    onClick={() => setIsOpen(false)}
                     className={`mx-auto ${
                       location.pathname === item.link ? "font-bold" : ""
                     }`}
@@ -107,7 +108,7 @@ function Header() {
                 </li>
               ))}
             </ul>
-            <div className="">
+            <div onClick={() => setIsOpen(false)}>
               <button
                 className={`relative group w-full transition duration-300 p-2 bg-black text-white rounded-xl`}
               >
